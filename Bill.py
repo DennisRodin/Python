@@ -7,29 +7,28 @@
 
 
 meal = int(input("How much did your meal cost? "))
-if (meal) < 0:
+if meal < 0:
    print("Empty") #not working. I wanted to give out a message if there's an invalid key such as the "Enter" key.
 else:
   print("")
 
 tax = int(input("What's the tax percentage? "))
-if (tax) < 0:
+if tax < 0:
    print("Empty") #not working. I wanted to give out a message if there's an invalid key such as the "Enter" key.
 else:
   print("")
 
 tip = int(input("What was the tip amount? "))
-if (tip) < 0:
+if tip < 0:
    print("Empty") #not working. I wanted to give out a message if there's an invalid key such as the "Enter" key.
 else:
   print("")
 
 occurred = int(input("How many times did you visit and eat at the restaurant? "))
-if (occurred) < 0:
+if occurred < 0:
    print("Empty") #not working. I wanted to give out a message if there's an invalid key such as the "Enter" key.
 else:
   print("")
-
 
 meal += meal*tax
 
@@ -37,9 +36,9 @@ total = meal + meal*tip
 
 discount = int(occurred)*int(total)
 
-amount_for_discount = 200 # Change here the restaurants' least amount for the discount.
+amount_for_discount = 1500 # Change here the restaurants' least amount for the discount.
 discount_percentage = 30#%# Change the restaurants' discount percentage here.
 if discount >= amount_for_discount:
    print("Yes, you get a " + str(discount_percentage) + "%" + " discount for you next order, because you have paid more than " + str(amount_for_discount) + ",-EUR. " + "The amount you have paid altogether is " + str(total) + ",-EUR. " )
 else:
-   print("No, you wont get a " + str(discount_percentage ) + "%" + " discount, because you have paid less than " + str(amount_for_discount) + ",-EUR. " + "The amount you have paid altogether is " + str(total) + ",-EUR. " )
+   print("No, you wont get a " + str(discount_percentage) + "%" + " discount, because you have paid less than " + str(amount_for_discount) + ",-EUR. " + "The amount you have paid altogether is " + str(total) + ",-EUR. " )

@@ -1,4 +1,6 @@
-#This is my testing playground of me testing some string functions.
+
+"""This is my testing playground of me 
+   testing some basic string functions."""
 
 
 base_text    = "----ThIs TeXt FrAgMeNt WaS nOt EdItEd.---- " 
